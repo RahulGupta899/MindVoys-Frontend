@@ -1,15 +1,13 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
-import Scorecard from './components/Scorecard';
-import Transcriptions from './components/TranscriptionsPage';
-import Homepage from './components/Homepage';
+import HealthCheck from './components/HealthCheck';
+import HomePage from './components/Homepage/HomePage';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Homepage/>}/>
-        {/* <Route path='/transcriptions' element={<Transcriptions/>}/>
-        <Route path='/scorecard' element={<Scorecard/>}/> */}
+        <Route path='/healthcheck' element={<HealthCheck/>}/>
+        <Route path='/' element={<HomePage/>}/>
       </Routes>
     </BrowserRouter>
   )
